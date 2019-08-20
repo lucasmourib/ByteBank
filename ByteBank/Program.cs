@@ -25,6 +25,9 @@ namespace ByteBank
 			roberta.Nome = "Roberta";
 			roberta.CPF = "454.658.148-3";
 			roberta.Salario = 5000;
+			Console.WriteLine(roberta.Nome);
+			Console.WriteLine(roberta.GetBonificacao());
+
 
 			gerenciador.Registrar(carlos);
 			gerenciador.Registrar(roberta);
