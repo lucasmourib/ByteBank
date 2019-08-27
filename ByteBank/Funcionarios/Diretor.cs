@@ -2,7 +2,7 @@
 
 namespace ByteBank.Funcionarios
 {
-	class Diretor : Funcionario
+	public class Diretor : Funcionario
 	{
 		public Diretor(string cpf) : base(5000, cpf)
 		{
@@ -16,7 +16,7 @@ namespace ByteBank.Funcionarios
 
 		public override double GetBonificacao()
 		{
-			return this.Salario + base.GetBonificacao();
+			return this.Salario * 0.5;
 		}
 	}
 }
